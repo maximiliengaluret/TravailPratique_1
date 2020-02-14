@@ -1,59 +1,49 @@
+@charset "UTF-8";
 /*-----------------------------------------------------
 Auteur : Maximilien Galuret
 Description : Travail Pratique 1
 
 ---- Table des matières ----
 INDEX des fichiers SCSS
-# Variables
-# Entete
-# Layout
-# Mixins
-# Navigation
-# Pied de page
-# Typographie
-# Elements
+#Elements
+#Entete
+#Layout
+#Mixins
+#Navigation
+#Pied de page
+#Typographie
+#Variables
 /*----------------------------------------------------
 # Variables
 -----------------------------------------------------*/
-
-@import "_variables.scss";
+/*Couleurs*/
 /*----------------------------------------------------
 # Typographie
 -----------------------------------------------------*/
-@import "_typographie.scss";
 /*------------------------------------------------------
 # Elements
 -----------------------------------------------------*/
 /*----------------------------------------------------
 # Mixins
 -----------------------------------------------------*/
-
-@import "_mixins.scss";
-
 /*------------------------------------------------------
 # Layout
 -----------------------------------------------------*/
-
-@import "_layout.scss";
-@import "_elements.scss";
+body {
+  font-family: Montserrat;
+}
 
 /*------------------------------------------------------
 # Enetete
 -----------------------------------------------------*/
-
-@import "_entete.scss";
-
 /*----------------------------------------------------
 # Navigation
 -----------------------------------------------------*/
-
-@import "_navigation.scss";
+h2 {
+  color: #FF4430;
+}
 
 /*----------------------------------------------------
 # Pied de page
 -----------------------------------------------------*/
-
-@import "_pied_page.scss";
-
-
-
+/*# sourceMappingURL=style.css.map */
