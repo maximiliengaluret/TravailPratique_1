@@ -22,3 +22,166 @@ License: GNU General Public License v2 or later
 On définit ici des règles de styles générales qui peuvent être enrichies ailleur.
 Ces règles servent de bases  
 */
+
+/*---------------------------NAVIGATION-----------------------------*/
+#checkMenu:checked ~ ul {
+    max-height: 100vw;
+  }
+  
+  #checkMenu:checked ~ ul > li {
+    opacity: 1;
+    text-align: center;
+  }
+  
+  #checkMenu:checked ~ #btnMenu {
+    
+    transform: rotate(90deg);
+    color:white;
+  }
+  
+  #checkMenu {
+    display: none;
+  }
+
+  #menu ul li a {
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+    padding: 6px 3px 3px 30px;
+    color: #b3afaf;
+  }
+  
+  #btnMenu {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    width: 35px;
+    height: 37px;
+   
+    
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    left: 10px;
+    top: 13px;
+    cursor: pointer;
+  }
+  
+  #menu {
+   
+    position: absolute;
+    top: 0px;
+    display: flex;
+    background-color:  rgb(240, 240, 240);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 70px;
+  }
+  
+  
+  #menu ul li {
+    opacity: 0;
+    transition: opacity .5s;
+    transition: opacity 1s;
+  }
+  
+ 
+  
+  #menu ul li a:hover {
+   color: black;
+   opacity: 1;
+   transition: 0.7s;
+    
+  }
+
+  #menu ul {
+    width: 100vw;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 32px;
+   
+    display: flex;
+    
+            flex-direction: column;
+    list-style-type: none;
+    max-height: 0px;
+    height: auto;
+  
+    transition: max-height 1s;
+    background-color:  rgb(240, 240, 240);
+    overflow: hidden;
+  }
+  
+  
+  #menu ul li a:last-child {
+    padding-bottom: 15px;
+  }
+
+  /*MENU ADAPTATIF*/
+  
+  @media screen and (min-width: 500px) {
+    #btnMenu {
+      display: none;
+    }
+    #menu {
+      position: static;
+    
+              flex-direction: row;
+    }
+    #menu ul {
+      height: 26px;
+      margin: 0;
+      margin-left: 2%;
+      overflow: visible;
+
+              flex-direction: row;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      opacity: 1;
+    }
+    #menu ul li {
+      opacity: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      text-align: center;
+      vertical-align: center;
+    }
+    #menu ul li a {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: 26px;
+      padding-top: 11px;
+    }
+    #menu ul li a:hover {
+      color: black;
+    }
+  }
+  
+
+  /*---------------------CORPS-----------------------------------*/
+
+  main{
+
+    background-color: rgb(92, 228, 255);
+    height: 50vh;
+    text-align: center;
+  }
+
+  main h3{
+
+    padding-top: 30px;;
+  }
+
+  
+   main h2{
+
+    padding-top: 50px;;
+  }
+
+  /*CARTES*/
+
+  
