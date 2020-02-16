@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript"  src="mjs/animation.js"></script>
+    <script type="text/javascript"  src="mjs/animation_2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
  
     <title>Travail Pratique 1</title>
@@ -45,10 +46,47 @@
                 
                 <h2>Les couleurs</h2><h3>Animation numéro 1</h3>
                 <div class="conteneurCartes">
-                        <div class="cartes Un">Un</div>
-                        <div class="cartes Deux">Deux</div>
-                        <div class="cartes Trois">Trois</div>
-                </div>
+                      
+                        <div class="flip-card" >
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                        <div class="cartes Un" onclick="flip()">Le Bleu</div>
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <h1>John Doe</h1> 
+                                    <p>Architect & Engineer</p> 
+                                    <p>We love that guy</p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="flip-card" >
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                            <div class="cartes Deux" onclick="flip2()">Deux</div>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        <h1>John Doe</h1> 
+                                        <p>Architect & Engineer</p> 
+                                        <p>We love that guy</p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="flip-card" >
+                                        <div class="flip-card-inner">
+                                          <div class="flip-card-front">
+                                                <div class="cartes Trois" onclick="flip3()">Trois</div>
+                                          </div>
+                                          <div class="flip-card-back">
+                                            <h1>John Doe</h1> 
+                                            <p>Architect & Engineer</p> 
+                                            <p>We love that guy</p>
+                                          </div>
+                                        </div>
+                                      </div>
+               </div>
 
                
             </main>
@@ -57,6 +95,8 @@
                     <canvas id="canva" width="200" height="100" style="border:1px solid #d3d3d3;">
                             </canvas>
             </section>
+
+           
     
 </body>
 </html>

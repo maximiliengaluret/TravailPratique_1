@@ -24,6 +24,10 @@ window.onload=function(){
         setTimeout(animationCercle, 19);
     }
     var i = 0;
-    animationCercle();
+    animationCercle();   
+   
+
+
+
 }
 
