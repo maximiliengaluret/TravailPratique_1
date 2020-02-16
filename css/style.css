@@ -31,7 +31,10 @@ INDEX des fichiers SCSS
 -----------------------------------------------------*/
 body {
   font-family: Montserrat;
+  width: 100vh;
 }
+
+
 
 /*------------------------------------------------------
 # Enetete
@@ -155,7 +158,7 @@ body{
   }
 
   #menu ul {
-    width: 100vw;
+    width: 100vh;
     margin-left: -20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -275,8 +278,7 @@ margin: 0 auto;
 
   canvas{
 
-    width:80%;
-    height: 80%;
+   
     
   }
 
@@ -287,7 +289,7 @@ margin: 0 auto;
     width: 300px;
     height: 300px;
     cursor: pointer;
-    
+
   }
   
   .flip-card-inner {
@@ -315,6 +317,78 @@ height: 230px;
     color: white;
     transform: rotateY(180deg);
   }
+
+  /*--------------------------------------------------------------
+# Pied-page 
+----------------------------------------------------------------*/
+/*Gestion du footer et du côté re*/
+
+
+
+#pied-page section {
+ 
+  display: flex;
+ 
+          flex-direction: column;
+ 
+          align-items: center;
+
+      justify-content: space-around;
+}
+
+#pied-page ul {
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+
+          flex: 1;
+
+  background-color: rgb(85, 85, 85);
+}
+
+#pied-page ul li {
+  padding: 3px;
+}
+
+@media screen and (min-width: 500px) {
+  #pied-page section {
+   
+            flex-direction: row;
+   
+        flex-wrap: wrap;
+    
+        justify-content: space-around;
+   
+       
+            align-items: center;
+  
+        align-content: center;
+  }
+  #pied-page ul {
+   
+            flex: 1 1 40%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pied-page section {
+    
+        flex-wrap: nowrap;
+   
+       
+            flex-direction: row;
+   
+        justify-content: space-around;
+  }
+  #pied-page ul {
+   
+     
+            flex: 1 1 25%;
+  }
+}
+
 
 
   
