@@ -341,7 +341,7 @@ margin: 0 auto;
 input[type="radio"] {
     position: absolute;  
     opacity: 1;
-    margin: 60% 50% 50% 50%;
+    margin: 60% 0% 0% 50%;
     cursor: pointer;
     
   }
@@ -445,6 +445,8 @@ input[type="radio"] {
             flex: 1 1 40%;
     text-align: center;
   }
+
+  
 }
 
 @media screen and (min-width: 1000px) {
