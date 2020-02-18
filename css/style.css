@@ -149,8 +149,6 @@ body{
     top: 0px;
     display: flex;
     background-color:  rgb(240, 240, 240);
-    -webkit-box-align: start;
-        -ms-flex-align: start;
             align-items: flex-start;
     height: 70px;
   }
@@ -257,8 +255,6 @@ body{
     text-align: center;
     
     
-    
-    
   }
 
   .cartes{
@@ -269,6 +265,26 @@ text-align: center;
 margin: 0 auto;
 
 
+  }
+
+  @media screen and (max-width: 500px) {
+  
+    #aJaune{
+      display: none;
+      
+        }
+
+        #bRouge{
+          display: none;
+          
+            }
+
+            #aBleu{
+                  margin: 0px 0px 0px 30px
+
+            }
+  
+    
   }
 
 
