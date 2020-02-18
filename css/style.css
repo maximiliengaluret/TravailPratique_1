@@ -93,11 +93,8 @@ body {
 }
 
 #menu {
-
   width: 100%;
 }
-
-
 
 /*---------------------------NAVIGATION-----------------------------*/
 #checkMenu:checked~ul {
@@ -136,7 +133,7 @@ body {
   width: 35px;
   height: 37px;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  transition: transform 1s;
   left: 10px;
   top: 13px;
   cursor: pointer;
@@ -224,9 +221,6 @@ body {
   }
 }
 
-
-
-
 /*---------------------CORPS-----------------------------------*/
 
 main {
@@ -284,6 +278,8 @@ main h2 {
 
   margin-top: 150px;
 }
+
+
 
 /*Animation trois*/
 

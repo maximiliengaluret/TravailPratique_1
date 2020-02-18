@@ -15,8 +15,7 @@ window.onload=function(){
         }
         
         if(i > 80){
-          i = 0;
-          
+          i = 0;        
         }
 
         i++;

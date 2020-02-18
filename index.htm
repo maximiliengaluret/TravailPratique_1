@@ -1,158 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!--<link rel="stylesheet" href=".vscode/settings.json">-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript"  src="mjs/animation.js"></script>
-    <script type="text/javascript"  src="mjs/animation_2.js"></script>
-    <script type="text/javascript"  src="mjs/animation_3.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
- 
-    <title>Travail Pratique 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--<link rel="stylesheet" href=".vscode/settings.json">-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="mjs/animation.js"></script>
+  <script type="text/javascript" src="mjs/animation_2.js"></script>
+  <script type="text/javascript" src="mjs/animation_3.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <title>Travail Pratique 1</title>
 </head>
+
 <body>
 
-        <header>
-                
-       
-        
-            <nav id='menu'>
-                    <input id="checkMenu" type="checkbox">
-                    <label id="btnMenu" for="checkMenu">&#9776;</label>
-                    <ul class='global'>
-                        <li><a href="">Cartes</a></li>
-                        <li><a href="">Cercles</a></li>
-                        <li><a href="">Horloge</a></li>
-                        <li><a href="">Slider</a></li>
-                      
-                    </ul>
-                    
-            </nav>
+  <header>
 
-        </header>
- 
-        
-            <main class="contenantPrincipal">
-                
-                <h2>Le Laboratoire</h2><h3>Animation numéro 1</h3>
-                <div class="conteneurCartes">
-                      
-                        <div class="flip-card" >
-                                <div class="flip-card-inner" id="aBleu">
-                                  <div class="flip-card-front">
-                                        <div class="cartes Un" onclick="flip()">Le Bleu</div>
-                                  </div>
-                                  <div class="flip-card-back">
-                                    <h1>Le bleu</h1> 
-                                    <p>Rêve et sagesse</p> 
-                                    <p>Couleur du ciel</p>
-                                  </div>
-                                </div>
-                              </div>
+    <nav id='menu'>
+      <input id="checkMenu" type="checkbox">
+      <label id="btnMenu" for="checkMenu">&#9776;</label>
+      <ul class='global'>
+        <li><a href="">Cartes</a></li>
+        <li><a href="">Cercles</a></li>
+        <li><a href="">Horloge</a></li>
+        <li><a href="">Slider</a></li>
 
-                              <div class="flip-card" id="aJaune">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
-                                            <div class="cartes Deux" onclick="flip2()">Le Jaune</div>
-                                      </div>
-                                      <div class="flip-card-back">
-                                        <h1>Le Jaune</h1> 
-                                        <p>Joie et stimulation</p> 
-                                        <p>Couleur du soleil</p>
-                                      </div>
-                                    </div>
-                                  </div>
+      </ul>
 
-                                  <div class="flip-card" id="aJaune">
-                                        <div class="flip-card-inner">
-                                          <div class="flip-card-front">
-                                                <div class="cartes Trois" onclick="flip3()">Le Rouge</div>
-                                          </div>
-                                          <div class="flip-card-back">
-                                            <h1>Le rouge</h1> 
-                                            <p>Passion et Danger</p> 
-                                            <p>Couleur de la vie</p>
-                                          </div>
-                                        </div>
-                                      </div>
-               </div>
+    </nav>
 
-               
-            </main>
-
-            <section class="animDeux">
-                <h3>Animation numéro 2</h3>
-                    <canvas id="canva" width="200" height="100">
-                            </canvas>
-            </section>
-
-            <section class="animTrois">
-                <h3>Animation numéro 3</h3>
-              <canvas id="canva2" width="1245" height="300">
-
-              
-              </canvas>
-            </section>
+  </header>
 
 
-          <section class="sliderContenant"></section>
-            
-            <h3>Slider en CSS</h3>
-            <input type="radio" id="trigger1" name="slider">
-            <label for="trigger1"></label>
-            <img class="slide bg1" src="./img/bleu.jpg"></img>
+  <main class="contenantPrincipal">
 
-            <input type="radio" id="trigger2" name="slider" checked autofocus>
-            <label for="trigger2"></label>
-            <img class="slide bg2" src="./img/jaune.jpg"></img>
+    <h2>Le Laboratoire</h2>
+    <h3>Animation numéro 1</h3>
+    <div class="conteneurCartes">
 
-            <input type="radio" id="trigger3" name="slider">
-            <label for="trigger3"></label>
-            <img class="slide bg3" src="./img/rouge.jpg"></img>
+      <div class="flip-card">
+        <div class="flip-card-inner" id="aBleu">
+          <div class="flip-card-front">
+            <div class="cartes Un" onclick="flip()">Le Bleu</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>Le bleu</h1>
+            <p>Rêve et sagesse</p>
+            <p>Couleur du ciel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" id="aJaune">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="cartes Deux" onclick="flip2()">Le Jaune</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>Le Jaune</h1>
+            <p>Joie et stimulation</p>
+            <p>Couleur du soleil</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" id="aJaune">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="cartes Trois" onclick="flip3()">Le Rouge</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>Le rouge</h1>
+            <p>Passion et Danger</p>
+            <p>Couleur de la vie</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-          </section>
+  </main>
 
+  <section class="animDeux">
+    <h3>Animation numéro 2</h3>
+    <canvas id="canva" width="200" height="100">
+    </canvas>
+  </section>
 
+  <section class="animTrois">
+    <h3>Animation numéro 3</h3>
+    <canvas id="canva2" width="1245" height="300"></canvas>
+  </section>
 
+  <section class="sliderContenant"></section>
 
-            <footer id='pied-page'>
-                    <section class="global">
-                        <ul>
-                            <li class="titreFooter">Le Bleu</li>
-                            <li>Soluta, distinctio</li>
-                            <li>Non, praesentium</li>
-                            <li>Cupiditate, deserunt</li>
-                          
-                        </ul>
-                        <ul>
-                            <li class="titreFooter">Le vert</li>
-                            <li>Illo, ipsum</li>
-                            <li>Impedit, laborum</li>
-                            <li>Dolores, quisquam</li>
-                          
-                        </ul>
-                        <ul>
-                            <li class="titreFooter">Le Rouge</li>
-                            <li>Porro, repellat</li>
-                            <li>Cumque, eligendi</li>
-                            <li>Suscipit, enim</li>
-                            
-                        </ul>
-                        <ul>
-                            <li class="titreFooter">Le Orange</li>
-                            <li>Harum, adipisci</li>
-                            <li>Recusandae, ipsam</li>
-                            <li>Delectus, dolores</li>
-                        
-                        </ul>
-                    </section>
-                </footer>       
+  <h3>Slider en CSS</h3>
+  <input type="radio" id="trigger1" name="slider">
+  <label for="trigger1"></label>
+  <img class="slide bg1" src="./img/bleu.jpg"></img>
+
+  <input type="radio" id="trigger2" name="slider" checked autofocus>
+  <label for="trigger2"></label>
+  <img class="slide bg2" src="./img/jaune.jpg"></img>
+
+  <input type="radio" id="trigger3" name="slider">
+  <label for="trigger3"></label>
+  <img class="slide bg3" src="./img/rouge.jpg"></img>
+
+  </section>
+
+  <footer id='pied-page'>
+    <section class="global">
+      <ul>
+        <li class="titreFooter">Le Bleu</li>
+        <li>Soluta, distinctio</li>
+        <li>Non, praesentium</li>
+        <li>Cupiditate, deserunt</li>
+
+      </ul>
+      <ul>
+        <li class="titreFooter">Le vert</li>
+        <li>Illo, ipsum</li>
+        <li>Impedit, laborum</li>
+        <li>Dolores, quisquam</li>
+
+      </ul>
+      <ul>
+        <li class="titreFooter">Le Rouge</li>
+        <li>Porro, repellat</li>
+        <li>Cumque, eligendi</li>
+        <li>Suscipit, enim</li>
+
+      </ul>
+      <ul>
+        <li class="titreFooter">Le Orange</li>
+        <li>Harum, adipisci</li>
+        <li>Recusandae, ipsam</li>
+        <li>Delectus, dolores</li>
+
+      </ul>
+    </section>
+  </footer>
 </body>
+
 </html>
