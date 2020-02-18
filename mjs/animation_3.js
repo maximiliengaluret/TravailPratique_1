@@ -8,7 +8,7 @@ function init(){
 function draw() {
 
   var ctx = document.getElementsByTagName('canvas')[1].getContext('2d');
-  ctx.globalCompositeOperation = 'destination-over';
+  
   ctx.clearRect(0,0,300,300); // effacer le canvas
 
   ctx.fillStyle = 'rgba(0,0,0,0.2)';
@@ -21,17 +21,7 @@ function draw() {
   ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
   ctx.translate(0,0);
   ctx.fillRect(5,0,90,5); // Ombre
-
-
-
-var time = new Date();
-ctx.rotate( ((Math.PI)/20)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
-ctx.translate(0,0);
-ctx.fillRect(5,0,90,5); // Ombre
-
-
   
-
   ctx.restore();
 
  

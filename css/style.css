@@ -36,6 +36,11 @@ body {
 
 }
 
+h2, h3{
+
+  text-align: center;
+}
+
 
 
 /*------------------------------------------------------
@@ -277,6 +282,7 @@ margin: 0 auto;
   .animTrois #canvas{
 
     width: 100vh;
+   
   }
 
   /*Animation cartes*/
@@ -313,6 +319,19 @@ margin: 0 auto;
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  @media screen and (max-width: 1000px) {
+
+
+    .flip-card-inner{
+ 
+      width: 50px;
+      height: 50px;
+     
+  
+    }
+
   }
 
 
