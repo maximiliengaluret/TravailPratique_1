@@ -90,15 +90,23 @@ body{
     height: 100%;
 }
 
+#menu{
+
+  width: 100%;
+}
+
 
 
 /*---------------------------NAVIGATION-----------------------------*/
 #checkMenu:checked ~ ul {
     max-height: 100vw;
+    width: 100vw;
+    
   }
   
   #checkMenu:checked ~ ul > li {
     opacity: 1;
+   
     
   }
   
@@ -116,7 +124,7 @@ body{
     text-decoration: none;
     margin-top: 15px;
     display: block;
-    padding: 6px 3px 3px 30px;
+    padding: 6px 3px 3px 130px;
     color: #b3afaf;
     
   }
@@ -184,8 +192,8 @@ body{
     }
     #menu {
       position: static;
-    
-              flex-direction: row;
+      flex-direction: row;
+      width: 100%;
     }
 
     
