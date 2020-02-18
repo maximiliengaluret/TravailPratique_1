@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript"  src="mjs/animation.js"></script>
     <script type="text/javascript"  src="mjs/animation_2.js"></script>
+    <script type="text/javascript"  src="mjs/animation_3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
  
     <title>Travail Pratique 1</title>
 </head>
@@ -24,10 +26,10 @@
                     <input id="checkMenu" type="checkbox">
                     <label id="btnMenu" for="checkMenu">&#9776;</label>
                     <ul class='global'>
-                        <li><a href="">Lorem_1</a></li>
-                        <li><a href="">Lorem_2</a></li>
-                        <li><a href="">Lorem_3</a></li>
-                        <li><a href="">Lorem_4</a></li>
+                        <li><a href="">Cartes</a></li>
+                        <li><a href="">Cercles</a></li>
+                        <li><a href="">Horloge</a></li>
+                        <li><a href="">Slider</a></li>
                       
                     </ul>
                     <!--
@@ -44,7 +46,7 @@
         
             <main class="contenantPrincipal">
                 
-                <h2>Les couleurs</h2><h3>Animation numéro 1</h3>
+                <h2>Le Laboratoire</h2><h3>Animation numéro 1</h3>
                 <div class="conteneurCartes">
                       
                         <div class="flip-card" >
@@ -64,7 +66,7 @@
                               <div class="flip-card" >
                                     <div class="flip-card-inner">
                                       <div class="flip-card-front">
-                                            <div class="cartes Deux" onclick="flip2()">Deux</div>
+                                            <div class="cartes Deux" onclick="flip2()">Le Jaune</div>
                                       </div>
                                       <div class="flip-card-back">
                                         <h1>John Doe</h1> 
@@ -77,7 +79,7 @@
                                   <div class="flip-card" >
                                         <div class="flip-card-inner">
                                           <div class="flip-card-front">
-                                                <div class="cartes Trois" onclick="flip3()">Trois</div>
+                                                <div class="cartes Trois" onclick="flip3()">Le Rouge</div>
                                           </div>
                                           <div class="flip-card-back">
                                             <h1>John Doe</h1> 
@@ -92,8 +94,15 @@
             </main>
 
             <section class="animDeux">
-                    <canvas id="canva" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    <canvas id="canva" width="200" height="100">
                             </canvas>
+            </section>
+
+            <section class="animTrois">
+              <canvas id="canva2" width="1245" height="300" style="border:1px solid #d3d3d3;">
+
+              
+              </canvas>
             </section>
 
 
