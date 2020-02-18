@@ -1,66 +1,25 @@
+var k = 0;
 
-  
-     var k = 0;
-    function flip() {
+function flip() {
 
-      
-       
-      var b = document.getElementsByClassName("flip-card-inner");
-      console.log(b);
-      k += 180;
-    
-      
+  var b = document.getElementsByClassName("flip-card-inner");
+  console.log(b);
+  k += 180;
+  b[0].style.transform = "rotatey(" + k + "deg)";
+}
 
-    
-      b[0].style.transform = "rotatey(" + k + "deg)";
-    
-      
-    
-    
+function flip2() {
 
+  var b = document.getElementsByClassName("flip-card-inner");
+  console.log(b);
+  k += 180;
+  b[1].style.transform = "rotatey(" + k + "deg)";
+}
 
-    }
+function flip3() {
 
-    function flip2() {
-
-      
-       
-        var b = document.getElementsByClassName("flip-card-inner");
-        console.log(b);
-        k += 180;
-      
-        
-     
-  
-      
-        b[1].style.transform = "rotatey(" + k + "deg)";
-      
-        
-      
-      
-  
-  
-      }
-
-      function flip3() {
-
-      
-       
-        var b = document.getElementsByClassName("flip-card-inner");
-        console.log(b);
-        k += 180;
-      
-        
-      
-  
-      
-        b[2].style.transform = "rotatey(" + k + "deg)";
-      
-        
-      
-
-  
-      }
-   
-   
-    
+  var b = document.getElementsByClassName("flip-card-inner");
+  console.log(b);
+  k += 180;
+  b[2].style.transform = "rotatey(" + k + "deg)";
+}

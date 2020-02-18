@@ -37,11 +37,5 @@ window.onload=function(){
     
     var i = 0;
     animationCercle();   
-
-    
-   
-   
-
-
 }
 
