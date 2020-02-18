@@ -278,6 +278,10 @@ main h2 {
 
   margin-top: 150px;
 }
+#canva{
+
+  background-color: #e2cccc;
+}
 
 
 
@@ -285,6 +289,11 @@ main h2 {
 
 .animTrois #canvas {
   width: 100vh;
+ 
+}
+
+#canva2{
+  background-color: beige;
 }
 
 /*Animation cartes*/
