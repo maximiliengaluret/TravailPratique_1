@@ -25,8 +25,7 @@ function flip3() {
   b[2].style.transform = "rotatey(" + k + "deg)";
 }
 
-
-/*
+/*-------------Code fonctionnel uniquement pour le recto---------------------
 class CarreFlip{
 
 

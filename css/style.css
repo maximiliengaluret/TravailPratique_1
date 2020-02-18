@@ -283,13 +283,10 @@ main h2 {
   background-color: #e2cccc;
 }
 
-
-
 /*Animation trois*/
 
 .animTrois #canvas {
   width: 100vh;
- 
 }
 
 #canva2{
@@ -302,6 +299,12 @@ main h2 {
   width: 300px;
   height: 300px;
   cursor: pointer;
+}
+
+.flip-card-front{
+  text-align: center;
+  color:white;
+  
 }
 
 .flip-card-inner {
