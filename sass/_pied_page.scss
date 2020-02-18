@@ -4,10 +4,11 @@
     padding-bottom: 30px;
     color : lighten($couleur_blanc,10%);
     section{
-        display : flex;
+       
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        text-align:center;
     }
     ul {
         padding : 10px;

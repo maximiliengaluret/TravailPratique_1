@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*-----------------------------------------------------
 Auteur : Maximilien Galuret
 Description : Travail Pratique 1
@@ -36,7 +37,8 @@ body {
 
 }
 
-h2, h3{
+h2,
+h3 {
 
   text-align: center;
 }
@@ -84,13 +86,13 @@ On définit ici des règles de styles générales qui peuvent être enrichies ai
 Ces règles servent de bases  
 */
 
-body{
+body {
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-#menu{
+#menu {
 
   width: 100%;
 }
@@ -98,332 +100,292 @@ body{
 
 
 /*---------------------------NAVIGATION-----------------------------*/
-#checkMenu:checked ~ ul {
-    max-height: 100vw;
-    width: 100vw;
-    
-  }
-  
-  #checkMenu:checked ~ ul > li {
-    opacity: 1;
-   
-    
-  }
-  
-  #checkMenu:checked ~ #btnMenu {
-    
-    transform: rotate(90deg);
-    color:white;
-  }
-  
-  #checkMenu {
+#checkMenu:checked~ul {
+  max-height: 100vw;
+  width: 100vw;
+
+}
+
+#checkMenu:checked~ul>li {
+  opacity: 1;
+}
+
+#checkMenu:checked~#btnMenu {
+
+  transform: rotate(90deg);
+  color: white;
+}
+
+#checkMenu {
+  display: none;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+  padding: 6px 3px 3px 130px;
+  color: #b3afaf;
+}
+
+#btnMenu {
+  display: block;
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  left: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+
+#menu {
+
+  position: absolute;
+  top: 0px;
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  align-items: flex-start;
+  height: 70px;
+}
+
+
+#menu ul li {
+  opacity: 0;
+  transition: opacity .5s;
+  transition: opacity 1s;
+}
+
+#menu ul li a:hover {
+  color: black;
+  opacity: 1;
+  transition: 0.7s;
+}
+
+#menu ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  max-height: 0px;
+  height: auto;
+  transition: max-height 1s;
+  background-color: rgb(240, 240, 240);
+  overflow: hidden;
+}
+
+#menu ul li a:last-child {
+  padding-bottom: 15px;
+}
+
+/*MENU ADAPTATIF*/
+
+@media screen and (min-width: 500px) {
+  #btnMenu {
     display: none;
   }
 
-  #menu ul li a {
-    text-decoration: none;
-    margin-top: 15px;
-    display: block;
-    padding: 6px 3px 3px 130px;
-    color: #b3afaf;
-    
-  }
-  
-  #btnMenu {
-    display: block;
-    color: #fff;
-    font-size: 2em;
-    position: absolute;
-    width: 35px;
-    height: 37px; 
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
-    left: 10px;
-    top: 13px;
-    cursor: pointer;
-  }
-  
   #menu {
-   
-    position: absolute;
-    top: 0px;
-    display: flex;
-    background-color:  rgb(240, 240, 240);
-            align-items: flex-start;
-    height: 70px;
+    position: static;
+    flex-direction: row;
+    width: 100%;
   }
-  
-  
-  #menu ul li {
-    opacity: 0;
-    transition: opacity .5s;
-    transition: opacity 1s;
-  }
-   
-  #menu ul li a:hover {
-   color: black;
-   opacity: 1;
-   transition: 0.7s;
-  }
-
   #menu ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    max-height: 0px;
-    height: auto;
-    transition: max-height 1s;
-    background-color:  rgb(240, 240, 240);
-    overflow: hidden;
+    height: 26px;
+    margin: 0;
+    margin-left: 2%;
+    overflow: visible;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 1;
   }
 
-  #menu ul li a:last-child {
-    padding-bottom: 15px;
-  }
-
-  /*MENU ADAPTATIF*/
-  
-  @media screen and (min-width: 500px) {
-    #btnMenu {
-      display: none;
-    }
-    #menu {
-      position: static;
-      flex-direction: row;
-      width: 100%;
-    }
-
-    
-    #menu ul {
-      height: 26px;
-      margin: 0;
-      margin-left: 2%;
-      overflow: visible;
-
-              flex-direction: row;
-   
-          justify-content: space-around;
-      opacity: 1;
-    }
-    #menu ul li {
-      opacity: 1;
-    
-              flex: 1;
-      text-align: center;
-      vertical-align: center;
-    }
-    #menu ul li a {
-    
-              flex: 1;
-      height: 26px;
-      padding-top: 11px;
-    }
-    #menu ul li a:hover {
-      color: black;
-    }
-  }
-  
-
-  /*---------------------CORPS-----------------------------------*/
-
-  main{
-
-    background-color: rgb(92, 228, 255);
-    height: 50vh;
+  #menu ul li {
+    opacity: 1;
+    flex: 1;
     text-align: center;
+    vertical-align: center;
   }
 
-  main h3{
+  #menu ul li a {
+    flex: 1;
+    height: 26px;
+    padding-top: 11px;
+    padding-left: 20px;
 
-    padding-top: 30px;;
-  }
-
-  
-   main h2{
-
-    padding-top: 50px;;
-  }
-
-  /*CARTES*/
-  .conteneurCartes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: 10px;
-    margin: 90px;
-    text-align: center;
-    
     
   }
 
-  .cartes{
-width: 190px;
-height: 230px;
-background-color: cornflowerblue;
-text-align: center;
-margin: 0 auto;
-
-
+  #menu ul li a:hover {
+    color: black;
   }
+}
 
-  @media screen and (max-width: 500px) {
+
+
+
+/*---------------------CORPS-----------------------------------*/
+
+main {
+  background-color: rgb(92, 228, 255);
+  height: 50vh;
+  text-align: center;
+}
+
+main h3 {
+  padding-top: 30px;
   
-    #aJaune{
-      display: none;
-      
-        }
+}
 
-        #bRouge{
-          display: none;
-          
-            }
+main h2 {
+  padding-top: 50px;
+}
 
-            #aBleu{
-                  margin: 0px 0px 0px 30px
+/*Animation Un*/
+.conteneurCartes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 10px;
+  margin: 90px;
+  text-align: center;
+}
 
-            }
-  
-    
+.cartes {
+  width: 190px;
+  height: 230px;
+  background-color: cornflowerblue;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+
+  #aJaune {
+    display: none;
   }
 
-
-  /*Animation Deux*/
-
-  .animDeux{
-
-    margin-top: 150px;
+  #bRouge {
+    display: none;
   }
 
-  canvas{
-
-   
-    
+  #aBleu {
+    margin: 0px 0px 0px 30px
   }
+}
 
-  /*Animation trois*/
 
-  .animTrois #canvas{
+/*Animation Deux*/
 
-    width: 100vh;
-   
-  }
+.animDeux {
 
-  /*Animation cartes*/
+  margin-top: 150px;
+}
 
-  .flip-card {
- 
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
+/*Animation trois*/
 
-  }
-  
+.animTrois #canvas {
+  width: 100vh;
+}
+
+/*Animation cartes*/
+
+.flip-card {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 190px;
+  height: 230px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1000px) {
+
   .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    
+
+    width: 50px;
+    height: 50px;
   }
-  
-  
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 190px;
-    height: 230px;
-   
-    
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  }
-
-  @media screen and (max-width: 1000px) {
+}
 
 
-    .flip-card-inner{
- 
-      width: 50px;
-      height: 50px;
-     
-  
-    }
+/*---------------- SLIDER -----------------------*/
 
-  }
-
-
-  /*---------------- SLIDER -----------------------*/
-  
- 
 input[type="radio"] {
-    position: absolute;  
-    opacity: 1;
-    margin: 60% 0% 0% 50%;
-    cursor: pointer;
-    
-  }
-  
-  label {
-    background-color: transparent;
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    
-  
-  }
+  position: absolute;
+  opacity: 1;
+  margin: 60% 0% 0% 50%;
+  cursor: pointer;
 
-  input:checked ~ .slide {
-    transform: translateX(100%);
-  }
-  
-  .slide {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    z-index: -1;
-    transform: translateX(-100%);
-    transition-duration: .8s;
-    opacity: 1;    
-    resize: none; 
-  }
-  
-  input:checked + label + .slide {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  
-  
+}
+
+label {
+  background-color: transparent;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+input:checked~.slide {
+  transform: translateX(100%);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition-duration: .8s;
+  opacity: 1;
+  resize: none;
+}
+
+input:checked+label+.slide {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Pied-page 
 ----------------------------------------------------------------*/
 /*Gestion du footer et du côté re*/
 
-#pied-page{
-
+#pied-page {
   position: relative;
-    bottom: -500px;
+  bottom: -500px;
 }
 
 #pied-page section {
- 
-  display: flex;
- 
-          flex-direction: column;
- 
-          align-items: center;
 
-      justify-content: space-around;
-      
-     bottom: 140;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 140;
 }
 
 #pied-page ul {
@@ -431,9 +393,6 @@ input[type="radio"] {
   list-style-type: none;
   margin: 0;
   padding: 10px 0 10px 0;
-
-       
-
   background-color: rgb(85, 85, 85);
 }
 
@@ -441,55 +400,57 @@ input[type="radio"] {
   padding: 4.5px;
 }
 
-.titreFooter{
-
+.titreFooter {
   margin-bottom: 7px;
   font-weight: bold;
 }
 
+/*Cellulaire*/
+@media screen and (max-width: 500px) {
 
-
-@media screen and (min-width: 500px) {
-  
   #pied-page section {
-   
-            flex-direction: row;
-  
-        flex-wrap: wrap;
-    
-        justify-content: space-around;
-   
-       
-            align-items: center;
-  
-        align-content: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
+
   #pied-page ul {
-   
-            flex: 1 1 40%;
+    flex: 4 1 100%;
     text-align: center;
   }
-
-  
 }
 
+/*IPAD*/
+@media screen and (min-width: 500px) {
+
+  #pied-page section {
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  #pied-page ul {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+}
+
+/*Desktop*/
 @media screen and (min-width: 1000px) {
   #pied-page section {
-    
-        flex-wrap: nowrap;
-   
-       
-            flex-direction: row;
-   
-        justify-content: space-around;
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
+
   #pied-page ul {
-   
-     
-            flex: 1 1 25%;
+    flex: 1 1 25%;
   }
 }
-
-
-
-  
