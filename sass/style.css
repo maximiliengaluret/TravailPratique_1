@@ -30,7 +30,7 @@ INDEX des fichiers SCSS
 # Layout
 -----------------------------------------------------*/
 body {
-  font-family: Montserrat;
+  font-family: $police;
 }
 
 /*------------------------------------------------------
@@ -53,17 +53,13 @@ h2 {
 }
 
 #pied-page section {
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+ 
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+ 
           align-items: center;
-  -ms-flex-pack: distribute;
+ 
       justify-content: space-around;
 }
 
@@ -72,8 +68,7 @@ h2 {
   list-style-type: none;
   margin: 0;
   padding: 10px 0 10px 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
+
           flex: 1;
   text-align: center;
   border: 3px dotted #fbb0b0;
@@ -85,23 +80,22 @@ h2 {
 
 @media screen and (min-width: 500px) {
   #pied-page section {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+    
+   
+   
             flex-direction: row;
-    -ms-flex-wrap: wrap;
+  
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
+    
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+  
+       
             align-items: center;
-    -ms-flex-line-pack: center;
+
         align-content: center;
   }
   #pied-page ul {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40%;
+   
             flex: 1 1 40%;
     text-align: center;
   }
@@ -109,18 +103,16 @@ h2 {
 
 @media screen and (min-width: 1000px) {
   #pied-page section {
-    -ms-flex-wrap: nowrap;
+   
         flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+
+        
             flex-direction: row;
-    -ms-flex-pack: distribute;
+   
         justify-content: space-around;
   }
   #pied-page ul {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 25%;
+   
             flex: 1 1 25%;
   }
 }
